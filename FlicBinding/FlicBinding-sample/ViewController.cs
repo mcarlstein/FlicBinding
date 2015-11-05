@@ -35,7 +35,7 @@ namespace FlicBindingsample
 			clickButton.SetTitle ("Add flic", UIControlState.Normal);
 			this.View.Add (clickButton);
 
-			this.flicManager = new SCLFlicManager (new FlicManagerDelegate (), "e5a87c01-6f2b-451a-86b0-8994f239d14f", "8861f5b0-6eab-49ba-bab4-699cc3f6b368", false, false);
+			this.flicManager = new SCLFlicManager (new FlicManagerDelegate (), "keyhere", "secrethere", false, false);
 
 			clickButton.TouchUpInside += (object sender, EventArgs e) => {
 				this.flicManager.RequestButtonFromFlicAppWithCallback ("flicsampleapp://button");
