@@ -1,0 +1,21 @@
+
+
+#Ignore individual user preferences
+FlicBinding/FlicBinding.userprefs
+
+#Ignorera system fil
+.DS_Store
+
+#Ignorera bygg filer
+FlicBinding/FlicBinding-sample/bin/**
+FlicBinding/FlicBinding-sample/obj/**
+FlicBinding/FlicBinding/bin/**
+FlicBinding/FlicBinding/obj/**
+
+
+FlicBinding/packages/**
+!FlicBinding/packages/repositories.config
+
+FlicBinding/Components/**
+
+*.orig
