@@ -71,7 +71,7 @@ namespace FlicBinding
 	{
 		// @optional -(void)flicButton:(SCLFlicButton * _Nonnull)button didReceiveButtonDown:(BOOL)queued age:(NSInteger)age;
 		[Export ("flicButton:didReceiveButtonDown:age:")]
-		void FlicButton (SCLFlicButton button, bool queued, nint age);
+		void FlicButtonDidReceiveButtonDown (SCLFlicButton button, bool queued, nint age);
 
 		// @optional -(void)flicButton:(SCLFlicButton * _Nonnull)button didReceiveButtonUp:(BOOL)queued age:(NSInteger)age;
 		[Export ("flicButton:didReceiveButtonUp:age:")]
@@ -99,7 +99,7 @@ namespace FlicBinding
 
 		// @optional -(void)flicButton:(SCLFlicButton * _Nonnull)button didDisconnectWithError:(NSError * _Nullable)error;
 		[Export ("flicButton:didDisconnectWithError:")]
-		void FlicButton (SCLFlicButton button, [NullAllowed] NSError error);
+		void FlicButtonDidDisconnectWithError (SCLFlicButton button, [NullAllowed] NSError error);
 
 		// @optional -(void)flicButton:(SCLFlicButton * _Nonnull)button didFailToConnectWithError:(NSError * _Nullable)error;
 		[Export ("flicButton:didFailToConnectWithError:")]
