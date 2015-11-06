@@ -168,7 +168,7 @@ namespace FlicBinding
 	{
 		// @optional -(void)flicManager:(SCLFlicManager * _Nonnull)manager didChangeBluetoothState:(SCLFlicManagerBluetoothState)state;
 		[Export ("flicManager:didChangeBluetoothState:")]
-		void FlicManager (SCLFlicManager manager, SCLFlicManagerBluetoothState state);
+		void FlicManagerDidChangeBluetoothState (SCLFlicManager manager, SCLFlicManagerBluetoothState state);
 
 		// @optional -(void)flicManagerDidRestoreState:(SCLFlicManager * _Nonnull)manager;
 		[Export ("flicManagerDidRestoreState:")]
@@ -176,7 +176,7 @@ namespace FlicBinding
 
 		// @optional -(void)flicManager:(SCLFlicManager * _Nonnull)manager didForgetButton:(NSUUID * _Nonnull)buttonIdentifier error:(NSError * _Nullable)error;
 		[Export ("flicManager:didForgetButton:error:")]
-		void FlicManager (SCLFlicManager manager, NSUuid buttonIdentifier, [NullAllowed] NSError error);
+		void FlicManagerDidForgetButton (SCLFlicManager manager, NSUuid buttonIdentifier, [NullAllowed] NSError error);
 	}
 }
 
